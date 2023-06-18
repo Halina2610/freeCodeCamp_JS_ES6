@@ -174,9 +174,27 @@ multiplier(4, 2);
 multiplier(4, 2)вернет значение 8.
 Перепишите myConcatфункцию, которая добавляет содержимое arr2к arr1, чтобы она использовала синтаксис стрелочной функции.*/
 
-
+const myConcat = (arr1, arr2)=> arr1.concat(arr2);
+console.log(myConcat([1, 2], [3, 4, 5]));
 
 //task 6
+/*Установите параметры по умолчанию для ваших функций
+Чтобы помочь нам создавать более гибкие функции, ES6 вводит параметры по умолчанию для функций.
+Проверьте этот код:
+const greeting = (name = "Anonymous") => "Hello " + name;
+console.log(greeting("John"));
+console.log(greeting());
+Консоль отобразит строки Hello Johnи Hello Anonymous.
+Параметр по умолчанию срабатывает, когда аргумент не указан (он не определен). 
+Как вы можете видеть в приведенном выше примере, параметр nameполучит значение по умолчанию, 
+Anonymousесли вы не укажете значение для параметра. Вы можете добавить значения по умолчанию для 
+любого количества параметров.
+Измените функцию increment, добавив параметры по умолчанию, чтобы она добавляла 1, numberесли valueне указано.*/
+
+// Only change code below this line
+const increment = (number, value = 1) => number + value;// знвчение по умодчанию (number, value = 1)
+// Only change code above this line
+
 //task 7
 //task 8
 //task 9
