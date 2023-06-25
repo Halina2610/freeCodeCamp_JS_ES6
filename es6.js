@@ -516,7 +516,9 @@ const result = {
 };
 function makeList(arr) {
   // Only change code below this line
-  const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`); //[ получим список '<li class="text-warning">no-var</li>','<li class="text-warning">var-on-top</li>', '<li class="text-warning">linebreak</li>' ]
+  const failureItems = arr.map(item => `<li class="text-warning">${item}</li>`); 
+  //[ получим список '<li class="text-warning">no-var</li>',
+  //'<li class="text-warning">var-on-top</li>', '<li class="text-warning">linebreak</li>' ]
   
   // Only change code above this line
 
@@ -526,10 +528,30 @@ function makeList(arr) {
 const failuresList = makeList(result.failure);
 
 //task 16
-/**/
+/*Напишите краткие литеральные объявления объекта, используя сокращенную запись свойства объекта
+ES6 добавляет хорошую поддержку для простого определения литералов объектов.
+
+Рассмотрим следующий код:
+
+const getMousePosition = (x, y) => ({
+  x: x,
+  y: y
+});
+getMousePosition— это простая функция, которая возвращает объект, содержащий два свойства. ES6 предоставляет синтаксический 
+сахар для устранения избыточности записи x: x. Вы можете просто написать xодин раз, и он будет преобразован в x: x(или что-то 
+подобное) под капотом. Вот та же функция, что и выше, переписанная для использования этого нового синтаксиса:
+
+const getMousePosition = (x, y) => ({ x, y });
+nameИспользуйте сокращение свойства объекта с объектными литералами для создания и возврата объекта со свойствами ageи gender.
+*/
+
+
 
 //task 17
 /**/
 
 //task 18
+/**/
+
 //task 19
+/**/
